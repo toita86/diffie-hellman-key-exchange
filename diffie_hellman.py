@@ -80,19 +80,18 @@ alpha, beta = initialize_alpha_beta(prime_numbers)
 print(f"Generated alpha: {alpha}")
 print(f"Generated beta: {beta}")
 
-# Both parties choose secret random values
+# Both parties generate secret random values
 x_a = generate_secret_values(1000000)
 x_b = generate_secret_values(1000000)
-print(f"Choosing the secret random values for A: {x_a} and of B: {x_b}")
+print(f"Generated secret random values for A: {x_a} and of B: {x_b}")
 
 # Calculate public values to be exchanged
 y_a = calculate_public_values(alpha, beta, x_a)
 y_b = calculate_public_values(alpha, beta, x_b)
-print(f"Calculate public values for A: {y_a} and of B: {y_b}")
+print(f"Computed public values for A: {y_a} and of B: {y_b}")
 print("++++++++++++++++++++++++++++++++++++++++++++")
 
 # Calculate shared secret keys
-
 k_a = calculate_shared_secret(y_b, x_a, beta)
 k_b = calculate_shared_secret(y_a, x_b, beta)
-print(f"Calculate shared secret keys for A: {k_a} and of B: {k_b}")
+print(f"Computed shared secret keys for A: {k_a} and of B: {k_b}")

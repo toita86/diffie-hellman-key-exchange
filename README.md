@@ -25,8 +25,7 @@ This Python script demonstrates the Diffie-Hellman key exchange, a cryptographic
 ## How to Run
 
 1. Ensure you have Python installed on your system.
-2. Copy and paste the script into a Python file (e.g., `diffie_hellman_key_exchange.py`).
-3. Run the script using a Python interpreter.
+2. Run the script using a Python interpreter.
 
 ```bash
 python3 diffie_hellman.py
